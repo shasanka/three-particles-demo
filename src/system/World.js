@@ -1,17 +1,16 @@
 import { createCamera } from "../components/camera";
-import { createCube } from "../components/cube";
 import { createAxesHelper, createGridHelper } from "../components/helpers";
 import { createLight } from "../components/light";
 import { createPoints } from "../components/points";
 import { createScene } from "../components/scene";
 import LoaderManager from "../managers/LoaderManager";
 import { Loop } from "./Loop";
-import { createRenderer } from "./Renderer";
+// import { createRenderer } from "./Renderer";
 import { Resizer } from "./Resizer";
 import { createControl } from "./controls";
 import Stats from "stats.js";
 import GUI from "lil-gui";
-// import image from "../assets/astro.jpg";
+import { createRenderer } from "./renderer";
 
 let camera;
 let scene;
