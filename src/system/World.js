@@ -34,7 +34,7 @@ class World {
     const assets = [
       {
         name: "image",
-        texture: "./src/assets/stading.jpg",
+        texture: "./assets/stading.jpg",
         // texture: "./src/system/stading.jpg",
       },
     ];
