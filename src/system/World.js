@@ -78,10 +78,13 @@ class World {
       // this.#mesh.position.y = this.#guiObj.y
       titleEl.style.display = this.#guiObj.showTitle ? "block" : "none";
     };
-    gui.add(this.#guiObj, "progress", 0, 1).onChange(() => {
-      // this.#points.uniform.
-      this.#points.material.uniforms.u_Progress.value = this.#guiObj.progress;
-    });
+    gui
+      .add(this.#guiObj, "progress", 0, 1)
+      .name("Slider Slide me")
+      .onChange(() => {
+        // this.#points.uniform.
+        this.#points.material.uniforms.u_Progress.value = this.#guiObj.progress;
+      });
     gui
       .add(this.#guiObj, "showTitle")
       .name("show title")
